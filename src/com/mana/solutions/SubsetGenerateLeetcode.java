@@ -16,7 +16,7 @@ public class SubsetGenerateLeetcode {
     public static void helper(List<List<Integer>> list , List<Integer> tempList, int [] nums, int start){
         list.add(new ArrayList<>(tempList));
         for(int i=start;i<nums.length;i++){
-            //if(i > start && nums[i] == nums[i-1]) continue; // skip duplicates
+            if(i > start && nums[i] == nums[i-1]) continue; // uncomment if you need to skip duplicates
             tempList.add(nums[i]);
             helper(list,tempList,nums,i+1);
             tempList.remove(tempList.size()-1);
@@ -24,7 +24,7 @@ public class SubsetGenerateLeetcode {
     }
 
     public static void main(String[] args) {
-        List<List<Integer>> list = subsets(new int[]{1, 2, 3});
+        List<List<Integer>> list = subsets(new int[]{1,1, 2, 3});
         System.out.println(list);
     }
 }
