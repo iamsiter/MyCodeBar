@@ -3,10 +3,14 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        //List<Integer> res= Arrays.asList(12,3,5);
-        List<Integer> res= Arrays.asList(1,23,5);
-        System.out.println(res.toString());
+        System.out.println(new Test().validIPAddress("2.34.43.25"));
+}
+
+    public boolean validIPAddress(String IP) {
+       //return IP.matches("(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])");
+        return IP.matches("[0-255]\\.[0-255]\\.[0-255]\\.[0-255]");
     }
+
 }
 
 
