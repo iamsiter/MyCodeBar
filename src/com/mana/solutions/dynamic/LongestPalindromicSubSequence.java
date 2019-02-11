@@ -1,6 +1,6 @@
 package com.mana.solutions.dynamic;
 
-public class LongestPalindroicSubSequence {
+public class LongestPalindromicSubSequence {
     public int longestPalindromeSubseq(String s) {
         char[] input = s.toCharArray();
         int n = input.length;
