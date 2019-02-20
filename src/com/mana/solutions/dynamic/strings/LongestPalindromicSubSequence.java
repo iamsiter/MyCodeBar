@@ -1,4 +1,4 @@
-package com.mana.solutions.dynamic;
+package com.mana.solutions.dynamic.strings;
 
 public class LongestPalindromicSubSequence {
     public int longestPalindromeSubseq(String s) {

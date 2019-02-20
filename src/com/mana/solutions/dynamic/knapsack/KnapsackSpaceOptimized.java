@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.dynamic.knapsack;
 
 public class KnapsackSpaceOptimized {
     public static void main(String[] args) {
@@ -14,9 +14,10 @@ public class KnapsackSpaceOptimized {
             // Mistakes done:: failed to visualize the index
             for (int i = 0; i < n; i++) {
                 for (int w = W; w >= wt[i]; w--) {
-                    // Why processing from right to left
+                    //Why processing from right to left
                     //Bcoz if processed from left to right it would replace the value in the array
-                    // and when higher onces are processed they need values of past which would have been replaced by now4
+                    //and when higher ones are processed they need values of past which would have
+                    //been replaced by now
                    memo[w]=Math.max(memo[w],val[i]+memo[w-wt[i]]);
                 }
             }

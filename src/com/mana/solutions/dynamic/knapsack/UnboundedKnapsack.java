@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.dynamic.knapsack;
 
 // Java program to find maximum achievable
 // value with a knapsack of weight W and

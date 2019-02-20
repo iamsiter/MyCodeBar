@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.dynamic.knapsack;
 
 public class Knapsack {
     public static void main(String[] args) {
