@@ -5,18 +5,15 @@ class Solution {
 
 
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(2,2,2,2,2,3,3,3,3,3);
-
-        list.sort(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-
-                return o1-o2;
-            }
-        });
-
-        list.stream().forEach(System.out::println);
-
+    List<String> list = new ArrayList<>();
+    list.add("A");
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+list.set(2,"SAHLI");
+    list.remove("A");
+        System.out.println(list);
 
     }
 

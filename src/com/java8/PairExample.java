@@ -12,7 +12,8 @@ public class PairExample {
 
         List<Pair<Integer,Integer>> list = new ArrayList<>(); //<Integer,Integer> is important
         BiFunction<Integer,Integer,Pair> p = Pair::new;
-        //https://www.baeldung.com/java-8-double-colon-operator
+
+      //https://www.baeldung.com/java-8-double-colon-operator
 
         for (int i = 1; i <= 20; i+=2) {
             list.add(p.apply(i,i+1));
