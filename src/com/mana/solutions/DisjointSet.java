@@ -1,11 +1,11 @@
-package com;
+package com.mana.solutions;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class DisjointSet {
 
-    Map<Long, Node> map = new HashMap<>();
+    Map<Long, Node> map = new HashMap<>(); //to enable easier lookup
 
     class Node {
         long data;
@@ -44,7 +44,7 @@ public class DisjointSet {
         Node parent = node.parent;
         if (parent == node)
             return parent;
-        node.parent = findSet(node.parent); //Path compression happening here
+        node.parent = findSet(node.parent); //Note : Path compression happening here
         return node.parent;
     }
 
