@@ -2,6 +2,8 @@ package com.mana.solutions;
 
 import java.util.*;
 
+//https://leetcode.com/problems/k-closest-points-to-origin/discuss/220235/Java-Three-solutions-to-this-classical-K-th-problem.
+
 class ClosestDestinations {
 
     private static List<List<Integer>> ClosestXDestinations(int numDestinations, List<List<Integer>> allocations, int numDeliveries) {
