@@ -7,9 +7,11 @@ import java.util.Queue;
 
 public class TreeNode {
     int val;
-    TreeNode left, right;
+    TreeNode left;
+    TreeNode right;
 
     TreeNode() {
+
     }
 
     TreeNode(int val) {
