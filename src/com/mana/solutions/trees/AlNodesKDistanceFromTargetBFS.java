@@ -5,6 +5,9 @@ import java.util.*;
 /*
  * Idea it to change upper part into tree by keeping child----> parent pointers in a data structure and
  * executing BFS starting from target node
+ *
+ * //TODO:Try it out yourself!!!
+ *
  * */
 public class AlNodesKDistanceFromTargetBFS {
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
