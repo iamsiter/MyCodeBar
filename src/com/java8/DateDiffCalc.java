@@ -39,13 +39,13 @@ public class DateDiffCalc {
             n1 += monthDays[i];
         }
 
-        n1 += countLeapYears(dt1);
+        n1 += countLeapYears(dt1); //extra day
 
         int n2 = dt2.y * 365 + dt2.d;
         for (int i = 0; i < dt2.m - 1; i++) {
             n2 += monthDays[i];
         }
-        n2 += countLeapYears(dt2);
+        n2 += countLeapYears(dt2); //extra day
 
         return (n2 - n1);
     }
