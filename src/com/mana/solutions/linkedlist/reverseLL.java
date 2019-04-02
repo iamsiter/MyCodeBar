@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.linkedlist;
 
 public class reverseLL {
 
@@ -31,12 +31,3 @@ public class reverseLL {
     }
 }
 
-
-class Node {
-    int val;
-    Node next;
-
-    Node(int val) {
-        this.val = val;
-    }
-}

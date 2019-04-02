@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.leetcode.linkedin;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.general;
 
 import java.util.HashMap;
 import java.util.Map;

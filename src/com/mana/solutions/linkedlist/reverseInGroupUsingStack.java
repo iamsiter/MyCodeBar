@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.linkedlist;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.backtrack;
 
 import java.util.*;
 import java.util.stream.Collectors;

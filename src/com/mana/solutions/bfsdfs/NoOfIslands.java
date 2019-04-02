@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.bfsdfs;
 
 public class NoOfIslands {
     public static int numIslands(char[][] grid) {

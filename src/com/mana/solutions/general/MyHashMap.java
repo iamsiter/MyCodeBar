@@ -1,4 +1,4 @@
-package com.mana.solutions;
+package com.mana.solutions.general;
 
 /*
  * 1) Can be cleaned by making find function( logic is being repeated in all the functions)
