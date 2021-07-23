@@ -33,6 +33,7 @@ public class DateDiffCalc {
 
     static int getDifference(Date dt1, Date dt2) {
 
+        // Count days to n1
         int n1 = dt1.y * 365 + dt1.d;
 
         for (int i = 0; i < dt1.m - 1; i++) {
@@ -41,6 +42,7 @@ public class DateDiffCalc {
 
         n1 += countLeapYears(dt1); //extra day
 
+        // Count days to n2
         int n2 = dt2.y * 365 + dt2.d;
         for (int i = 0; i < dt2.m - 1; i++) {
             n2 += monthDays[i];
@@ -57,3 +59,9 @@ public class DateDiffCalc {
                 getDifference(dt1, dt2));
     }
 }
+
+/*
+* The year 2000 was a leap year, because even though it is divisible by 100 it's also divisible by 400.
+* The years 1700, 1800, and 1900 were not leap years, but 2000 was. The year 2100 won't be, nor 2200,
+* nor 2300. But 2400 will be
+* */

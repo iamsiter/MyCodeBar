@@ -11,8 +11,6 @@ public class GetMaxFromMap {
 
         int key = Collections.max(mymap.entrySet(), Map.Entry.comparingByValue()).getKey();
         System.out.println(key);
-
-
     }
 
 }

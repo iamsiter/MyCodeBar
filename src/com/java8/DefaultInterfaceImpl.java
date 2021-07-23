@@ -1,39 +1,38 @@
 package com.java8;
 
-import java.util.Comparator;
-
 public class DefaultInterfaceImpl implements A, B {
 
-    @Override
+   @Override
     public void show() {
+        // Class override is always stronger
         System.out.println("BiiiHiii");
     }
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-       /* A a = new DefaultInterfaceImpl();
-        a.show();
+    A a = new DefaultInterfaceImpl();
+    a.show();
 
-        A b = new DefaultInterfaceImpl();
-        b.show();*/
+        /*A b = new DefaultInterfaceImpl();
+        b.show(); */
 
        /* //------------static--------------------
         A.show();
        */
 
-       //---------------default-------------------
+    //---------------default-------------------
         B b = new DefaultInterfaceImpl();
         b.show();
-    }
+  }
 }
 
 interface B {
-    public void show();
+  public void show();
 }
 
 interface A {
-   /* public default void show(){
-        System.out.println("Hiiii");
-    }*/
+  public default void show() {
+    System.out.println("Hiiii");
+  }
 }
 
